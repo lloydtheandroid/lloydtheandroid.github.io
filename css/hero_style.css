@@ -33,7 +33,7 @@ body {
 
 .grid {
     background: #DDD;
-    max-width: 1200px;
+    max-width: 530px;
 }
 
 /* clear fix */
@@ -48,21 +48,17 @@ body {
 /* 5 columns, percentage width */
 .grid-sizer,
 .grid-item {
-    width: 25vw;
+    width: 20%;
 }
 
 .grid-item {
     float: left;
-    width: 25vw;
-    height: 40vh;
+    width: 100px;
+    height: 100px;
     background: #C09;
     border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
 
-/*.grid-item--width2 { width: 100px; }*/
-/*.grid-item--height2 { height: 100px; }*/
-
-/* highlight drag & drop */
 .grid-item:hover {
     border-color: hsla(0, 0%, 100%, 0.5);
     cursor: move;

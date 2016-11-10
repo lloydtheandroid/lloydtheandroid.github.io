@@ -29,13 +29,11 @@ body {
     display: none;
 }
 
-
-
-
 /* ---- grid ---- */
 
 .grid {
     background: #DDD;
+    max-width: 1200px;
 }
 
 /* clear fix */
@@ -45,21 +43,44 @@ body {
     clear: both;
 }
 
-/* ---- .grid-item ---- */
+/* ---- .element-item ---- */
 
+/* 5 columns, percentage width */
+.grid-sizer,
 .grid-item {
-    width: 33.333%;
+    width: 25vw;
 }
 
 .grid-item {
     float: left;
+    width: 25vw;
+    height: 40vh;
+    background: #C09;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
 
-.grid-item img {
-    display: block;
-    max-width: 100%;
+/*.grid-item--width2 { width: 100px; }*/
+/*.grid-item--height2 { height: 100px; }*/
+
+/* highlight drag & drop */
+.grid-item:hover {
+    border-color: hsla(0, 0%, 100%, 0.5);
+    cursor: move;
 }
 
+/* Draggabilly adds is-dragging */
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+    background: #C90;
+    z-index: 2;
+}
+
+.packery-drop-placeholder {
+    outline: 3px dashed hsla(0, 0%, 0%, 0.5);
+    outline-offset: -6px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
 
 span.arrow {
     height: 50px;

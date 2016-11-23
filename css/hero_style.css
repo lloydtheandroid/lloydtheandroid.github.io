@@ -2071,9 +2071,9 @@ button.close{
 .affix{
     position:fixed
 }
-@-ms-viewport{
-    width:device-width
-}
+/*@-ms-viewport{*/
+    /*width:device-width*/
+/*}*/
 .visible-xs,.visible-sm,.visible-md,.visible-lg{
     display:none !important
 }
@@ -2480,13 +2480,13 @@ Copyright (c) 2014 Daniel Eden
 .slick-loading .slick-list{
     background:#fff url("../img/ring.svg") center center no-repeat
 }
-@font-face{
-    font-family:'slick';
-    font-weight:normal;
-    font-style:normal;
-    src:url("fonts/slick.eot");
-    src:url("fonts/slick.eot?#iefix") format("embedded-opentype"),url("./fonts/slick.woff") format("woff"),url("./fonts/slick.ttf") format("truetype"),url("./fonts/slick.svg#slick") format("svg")
-}
+/*@font-face{*/
+    /*font-family:'slick';*/
+    /*font-weight:normal;*/
+    /*font-style:normal;*/
+    /*src:url("fonts/slick.eot");*/
+    /*src:url("fonts/slick.eot?#iefix") format("embedded-opentype"),url("./fonts/slick.woff") format("woff"),url("./fonts/slick.ttf") format("truetype"),url("./fonts/slick.svg#slick") format("svg")*/
+/*}*/
 .slick-prev,.slick-next{
     font-size:0;
     line-height:0;
@@ -2822,8 +2822,8 @@ Copyright (c) 2014 Daniel Eden
     border-radius:50%;
     -webkit-transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);
     transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);
-    -webkit-perspective:1000;
-    perspective:1000;
+    -webkit-perspective:1000px;
+    perspective:1000px;
     -webkit-transition:all 0 ease-in-out 0;
     transition:all 0 ease-in-out 0
 }

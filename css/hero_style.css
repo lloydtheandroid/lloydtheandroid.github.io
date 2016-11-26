@@ -2982,6 +2982,9 @@ body.transitioning #transition-color{
     left:auto;
     margin:0
 }
+#elformo_honeypot {
+    display: none;
+}
 @media screen and (max-width: 991px){
     #careers #careerGrid .grid-item span.intern{
         top:40px;

@@ -2906,7 +2906,7 @@ body.transitioning #transition-color{
     line-height:85px;
     font-weight:400;
     font-size:16px;
-    color:#00B5EC;
+    color:#6b6b6b;
     z-index:999;
     transition:all .2s ease-in
 }
@@ -2916,8 +2916,8 @@ body.transitioning #transition-color{
     left:10px
 }
 #careers #careerGrid .grid-item span.view svg polygon.st0{
-    fill:#00B5EC;
-    stroke:#00B5EC;
+    fill:#6b6b6b;
+    stroke:#6b6b6b;
     transition:all .2s ease-in
 }
 #careers #careerGrid .grid-item span.view:after{
@@ -3058,7 +3058,7 @@ body #heroBackground{
     left:0;
     width:100%;
     height:calc(100% + 480px);
-    background-color:#00b5ec;
+    background-color:#47d200;
     transition:all .2s ease-in-out
 }
 body .preloader{
@@ -3099,13 +3099,13 @@ body#index{
     background:white
 }
 body#index .preloader{
-    background:#00b5ec
+    background:#6b6b6b
 }
 body#index .preloader .bar{
-    background:#fff200
+    background:#e0000a
 }
 body#index .preloader .bar:after{
-    box-shadow:0 0 4px #fff200, 0 0 4px #fff200, 0 0 4px #fff200
+    box-shadow:0 0 4px #e0000a, 0 0 4px #e0000a, 0 0 4px #e0000a
 }
 body[id*="case-study-page"] #page{
     max-width:initial !important;
@@ -3129,7 +3129,7 @@ h1,h2,h3,h4,h5,h6{
     width:100%;
     padding-left:0;
     padding-right:0;
-    background:#00b5ec;
+    background:#6b6b6b;
     position:relative
 }
 #heroWrapper .overlay{
@@ -3315,7 +3315,7 @@ h1,h2,h3,h4,h5,h6{
     bottom:auto;
     left:0;
     height:480px;
-    background:#00b5ec;
+    background:#6b6b6b;
     transition:background-color .2s ease-in-out
 }
 #gridWrapper.twitter:before{
@@ -5135,7 +5135,7 @@ h1,h2,h3,h4,h5,h6{
     display:inline-block
 }
 #footer .contact a svg path,#footer .contact a svg polygon{
-    fill:#00b5ec;
+    fill:#6b6b6b;
     -webkit-transition:fill .1s ease-in-out;
     transition:fill .1s ease-in-out
 }
@@ -5170,11 +5170,11 @@ h1,h2,h3,h4,h5,h6{
     padding-right:30px;
     font-weight:400;
     font-size:13px;
-    color:#00b5ec;
+    color:#6b6b6b;
     text-align:right
 }
 #footer .bottom-right a{
-    color:#00b5ec;
+    color:#6b6b6b;
     text-decoration:none;
     transition:all .3s ease-in-out;
     display:inline-block;
@@ -12073,7 +12073,7 @@ a.go-top svg{
     display:inline-block
 }
 #contact_form button svg path,#contact_form button svg polygon{
-    fill:#00b5ec;
+    fill:#6b6b6b;
     -webkit-transition:fill .1s ease-in-out;
     transition:fill .1s ease-in-out
 }

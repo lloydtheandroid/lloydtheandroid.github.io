@@ -43,10 +43,10 @@ function socialOverlay(){
                 $(".overlay.instagram").addClass("animate"),$(".overlay.instagram span").addClass("animate-scale"),$(".overlays-wrapper, #heroBackground").css("background-color","#8d6851")
             }).on("mouseleave",function(){
                 $(".overlay.instagram").removeClass("animate"),$(".overlay.instagram span").removeClass("animate-scale"),$(".overlays-wrapper").css("background-color","transparent"),$("#heroBackground").css("background-color","#00b5ec")}),
-            $("#hero .social > a.vimeo").on("mouseenter",function(){
-                $(".overlay.vimeo").addClass("animate"),$(".overlay.vimeo span").addClass("animate-scale"),$(".overlays-wrapper, #heroBackground").css("background-color","#162221")
+            $("#hero .social > a.github").on("mouseenter",function(){
+                $(".overlay.github").addClass("animate"),$(".overlay.github span").addClass("animate-scale"),$(".overlays-wrapper, #heroBackground").css("background-color","#162221")
             }).on("mouseleave",function(){
-                $(".overlay.vimeo").removeClass("animate"),$(".overlay.vimeo span").removeClass("animate-scale"),$(".overlays-wrapper").css("background-color","transparent"),$("#heroBackground").css("background-color","#00b5ec")})}}
+                $(".overlay.github").removeClass("animate"),$(".overlay.github span").removeClass("animate-scale"),$(".overlays-wrapper").css("background-color","transparent"),$("#heroBackground").css("background-color","#00b5ec")})}}
 
 function verticallyCenterTweets(){
     $(".grid .twitter span.tweet").each(function(){var tweetNegativeMargin=-$(this).outerHeight()/2;$(this).css("margin-top",tweetNegativeMargin)})}

@@ -15,7 +15,7 @@ audio,canvas,progress,video{
     vertical-align:baseline
 }
 audio:not([controls]){
-    display:none;
+    /*display:none;*/
     height:0
 }
 [hidden],template{
@@ -1832,7 +1832,7 @@ pre code{
     opacity:1
 }
 .collapse{
-    display:none;
+    /*display:none;*/
     visibility:hidden
 }
 .collapse.in{
@@ -1909,7 +1909,7 @@ button.close{
     overflow:hidden
 }
 .modal{
-    display:none;
+    /*display:none;*/
     overflow:hidden;
     position:fixed;
     top:0;
@@ -2664,7 +2664,7 @@ Copyright (c) 2014 Daniel Eden
     visibility:hidden
 }
 .slick-slide{
-    display:none;
+    /*display:none;*/
     float:left;
     height:100%;
     min-height:1px
@@ -3233,7 +3233,7 @@ h1,h2,h3,h4,h5,h6{
 #hero .tagline h2{
     font-size:28px;
     font-weight:300;
-    color:#b1edff
+    color:#00ff00
 }
 #hero .tagline h2 a{
     color:white;
@@ -3255,10 +3255,10 @@ h1,h2,h3,h4,h5,h6{
     transition:fill .1s ease-in-out
 }
 #hero .tagline h2 a:hover{
-    color:#16364f
+    color:lime;
 }
 #hero .tagline h2 a:hover svg path,#hero .tagline h2 a:hover svg polygon{
-    fill:#16364f
+    fill:lime;
 }
 #hero .tagline h2 a:active{
     -webkit-transform:scale(0.9, 0.9);
@@ -3283,7 +3283,7 @@ h1,h2,h3,h4,h5,h6{
     line-height:75px;
     border-radius:37.5px;
     border-radius:50%;
-    background:#fff200;
+    background:lime;
     box-shadow:0 6px 20px 0 rgba(0,0,0,0.09),0 8px 17px 0 rgba(0,0,0,0.08);
     -webkit-transition:box-shadow .1s ease-in-out, transform .1s ease-in-out;
     transition:box-shadow .1s ease-in-out, transform .1s ease-in-out
@@ -3333,7 +3333,7 @@ h1,h2,h3,h4,h5,h6{
 #gridWrapper.instagram:before{
     background-color:#8d6851
 }
-#gridWrapper.vimeo:before{
+#gridWrapper.github:before{
     background-color:#162221
 }
 .grid{
@@ -3344,7 +3344,7 @@ h1,h2,h3,h4,h5,h6{
     z-index:9999;
     -webkit-backface-visibility:hidden
 }
-.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
     height:240px;
     float:left;
     background-repeat:no-repeat;
@@ -3352,13 +3352,13 @@ h1,h2,h3,h4,h5,h6{
     background-size:100% auto;
     background-size:cover
 }
-.grid .grid-sizer,.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
+.grid .grid-sizer,.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
     width:25%
 }
-.grid .dribbble,.grid .vimeo,.grid .instagram,.grid .image{
+.grid .dribbble,.grid .github,.grid .instagram,.grid .image{
     overflow:hidden
 }
-.grid .dribbble>img,.grid .vimeo>img,.grid .instagram>img,.grid .image>img{
+.grid .dribbble>img,.grid .github>img,.grid .instagram>img,.grid .image>img{
     height:105%;
     width:auto;
     position:absolute;
@@ -3399,7 +3399,7 @@ h1,h2,h3,h4,h5,h6{
     z-index:9999
 }
 .grid .dribbble>img{
-    display:none;
+    /*display:none;*/
     height:auto;
     width:100%;
     position:absolute;
@@ -3442,29 +3442,29 @@ h1,h2,h3,h4,h5,h6{
     position:relative;
     z-index:2
 }
-.grid .instagram>a,.grid .vimeo>a{
+.grid .instagram>a,.grid .github>a{
     position:relative;
     z-index:2
 }
 .grid .image{
     position:relative
 }
-.grid .vimeo{
+.grid .github{
     position:relative
 }
-.grid .vimeo>img{
+.grid .github>img{
     height:100%;
     top:0;
     -webkit-transform:translate3d(-50%, 0, 0);
     transform:translate3d(-50%, 0, 0)
 }
-.grid .vimeo a{
+.grid .github a{
     display:block;
     width:100%;
     height:100%;
     text-decoration:none
 }
-.grid .vimeo a>span{
+.grid .github a>span{
     display:block;
     position:absolute;
     top:0;
@@ -3478,8 +3478,8 @@ h1,h2,h3,h4,h5,h6{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
 }
-.grid .vimeo a>span:before{
-    content:'Watch on Vimeo';
+.grid .github a>span:before{
+    content:'Watch on github';
     display:block;
     height:55px;
     width:55px;
@@ -3505,7 +3505,7 @@ h1,h2,h3,h4,h5,h6{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
 }
-.grid .vimeo a svg{
+.grid .github a svg{
     position:absolute;
     top:50%;
     left:50%;
@@ -3516,33 +3516,33 @@ h1,h2,h3,h4,h5,h6{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
 }
-.grid .vimeo a svg circle.st0{
+.grid .github a svg circle.st0{
     stroke-width:1.25px;
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
 }
-.grid .vimeo a svg polygon.st0{
+.grid .github a svg polygon.st0{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
 }
-.grid .vimeo a:hover>span{
+.grid .github a:hover>span{
     opacity:1
 }
-.grid .vimeo a:hover>span:before{
+.grid .github a:hover>span:before{
     width:200px;
     -webkit-transform:translate3d(-50%, -27.5px, 0);
     transform:translate3d(-50%, -27.5px, 0)
 }
-.grid .vimeo a:hover svg{
+.grid .github a:hover svg{
     -webkit-transform:scale(0.7, 0.7) translate3d(-105px, 0, 0);
     transform:scale(0.7, 0.7) translate3d(-105px, 0, 0)
 }
-.grid .vimeo a:hover svg polygon.st1{
+.grid .github a:hover svg polygon.st1{
     fill:black !important;
     position:relative;
     z-index:999
 }
-.grid .vimeo a:hover svg circle.st0{
+.grid .github a:hover svg circle.st0{
     fill:white !important
 }
 .grid .instagram{
@@ -5201,7 +5201,7 @@ h1,h2,h3,h4,h5,h6{
 #footer .bottom-right a:hover{
     color:#16364f
 }
-#footer .bottom-right a:hover.twitter svg path,#footer .bottom-right a:hover.facebook svg path,#footer .bottom-right a:hover.instagram svg path,#footer .bottom-right a:hover.vimeo svg path{
+#footer .bottom-right a:hover.twitter svg path,#footer .bottom-right a:hover.facebook svg path,#footer .bottom-right a:hover.instagram svg path,#footer .bottom-right a:hover.github svg path{
     stroke:#16364f
 }
 #footer .bottom-right a:hover.dribbble svg path{
@@ -5229,10 +5229,10 @@ h1,h2,h3,h4,h5,h6{
     #gridWrapper:before{
         display:none
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:240px
     }
-    .grid .grid-sizer,.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
+    .grid .grid-sizer,.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
         width:25%
     }
     .grid .case-study{
@@ -5349,7 +5349,7 @@ h1,h2,h3,h4,h5,h6{
         width:100%;
         margin:0 auto
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:215px
     }
     .grid .case-study.vertical{
@@ -5416,7 +5416,7 @@ h1,h2,h3,h4,h5,h6{
         max-width:100%;
         margin:0 auto
     }
-    .grid .grid-sizer,.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .grid-sizer,.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         width:50%;
         height:372px
     }
@@ -5498,9 +5498,9 @@ h1,h2,h3,h4,h5,h6{
     #footer .about{
         padding-bottom:0
     }
-    #footer .about .social-links{
-        display:none
-    }
+    /*#footer .about .social-links{*/
+        /*display:none*/
+    /*}*/
     #footer .contact{
         margin-top:50px;
         margin-bottom:75px
@@ -5553,10 +5553,10 @@ h1,h2,h3,h4,h5,h6{
     #hero .down{
         bottom:70px
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:290px
     }
-    .grid .grid-sizer,.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
+    .grid .grid-sizer,.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
         width:50%
     }
     .grid .case-study{
@@ -5667,10 +5667,10 @@ h1,h2,h3,h4,h5,h6{
     #hero .tagline h1{
         margin-bottom:10px
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:310px
     }
-    .grid .grid-sizer,.grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
+    .grid .grid-sizer,.grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
         width:100%
     }
     .grid .case-study{
@@ -5990,10 +5990,10 @@ h1,h2,h3,h4,h5,h6{
 
 }
 @media screen and (max-width: 375px){
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:282px
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .image{
         width:100%
     }
     .grid .case-study{
@@ -6063,7 +6063,7 @@ h1,h2,h3,h4,h5,h6{
         font-size:30px;
         padding-right:0
     }
-    .grid .dribbble,.grid .vimeo,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
+    .grid .dribbble,.grid .github,.grid .twitter,.grid .instagram,.grid .facebook,.grid .case-study,.grid .image{
         height:240px
     }
     .grid .case-study{
@@ -9950,7 +9950,7 @@ body#case-study-page-red_bull_records #caseStudyContent .unconventional .player-
     z-index:1
 }
 body#case-study-page-red_bull_records #caseStudyContent .unconventional .player-wrapper .player-bg.mobile{
-    display:none;
+    /*display:none;*/
     width:282px;
     height:89px;
     max-width:100%
@@ -11526,7 +11526,7 @@ body#case-study-page-li5 .more-case-studies strong{
     top:-3px;
     margin:0 10px 0 0
 }
-.title-subtitle-stores .stores a.vimeo svg:first-child{
+.title-subtitle-stores .stores a.github svg:first-child{
     top:-2px;
     margin:0 10px 0 0
 }

@@ -16,24 +16,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hero_style.css">
     <style>
-        .overlays-wrapper .animate{
-            opacity: 1;
-            z-index: 9999;
-            background-color: transparent;"
-        }
-        a.facebook {
-            height: 151px;
-        }
-        .facebook>span {
-            height: 291px;
-        }
         .social-links img {
             height: 40px;
-            width: 40px;
+            width: 35px;
         }
         .social-links-bottom img {
             height: 30px;
-            width: 30px;
+            width: 25px;
         }
     </style>
 </head>
@@ -151,13 +140,13 @@
         <div class="row">
             <div class="about col-xs-12 col-sm-6  col-md-6 col-lg-6">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h1>About Us</h1>
+                    <div class="col-md-12">
+                        <h1>About Me</h1>
                         <p>I am a full stack web developer</p>
                         <p>My process is flexible, collaborative, and adapts to each client’s needs. I look forward to working
                         with you on your next project.</p>
                     </div>
-                    <div class="social-links col-sm-12 hidden-sm hidden-xs">
+                    <div class="social-links col-md-12 hidden-sm hidden-xs">
                         <a class="twitter" href="https://twitter.com/lloydtheandroid" target="_blank">
                             <img src="img/TwitterFooter.png" alt="" title="" />
                         </a>
@@ -269,20 +258,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    $("a.facebook").hover(
-        function() {
-            $(".overlay.facebook").addClass( "animate" );
-            $(".overlays-wrapper").addClass("animate");
-            $(".facebook>span").addClass("animate-scale")
-        }, function() {
-            $(".overlay.facebook").removeClass("animate");
-            $(".overlays-wrapper").removeClass("animate");
-            $(".facebook>span").removeClass("animate-scale")
-
-
-        }
-    );
-</script>
 </body>
 </html>

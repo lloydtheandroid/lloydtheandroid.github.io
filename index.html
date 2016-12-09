@@ -17,12 +17,42 @@
     <link rel="stylesheet" href="css/hero_style.css">
     <style>
         .social-links img {
-            height: 40px;
             width: 35px;
+            height: auto;
         }
         .social-links-bottom img {
-            height: 30px;
             width: 25px;
+            height: auto;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid {
+            position: relative;
+
+            /*border: 1px solid #333;*/
+            margin: 2%;
+            overflow: hidden;
+            width: 250px;
+        }
+        .grid img {
+            max-width: 100%;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            opacity: .5;
+        }
+        .grid:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: 1;
         }
     </style>
 </head>
@@ -133,17 +163,25 @@
         <div class="container">
             <h3>Published Projects</h3>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3 grid">
                     <img src="http://placehold.it/250x250/fe1234">
-                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Simple Simon </a></h3>
+                    <h3><a href="#">Capstone Project (TBD)</a></h3>
+                    <div class="item-overlay top"></div>
                 </div>
-                <div class="col-md-4">
-                    <img src="http://placehold.it/250x250/fe1234">
+                <div class="col-md-3 grid">
+                    <img src="img/SimpleSimon.png">
                     <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Simple Simon </a></h3>
+                    <div class="item-overlay top"></div>
                 </div>
-                <div class="col-md-4">
-                    <img src="http://placehold.it/250x250/fe1234">
-                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Simple Simon </a></h3>
+                <div class="col-md-3 grid">
+                    <img src="img/weather_map.png">
+                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Weather Map </a></h3>
+                    <div class="item-overlay top"></div>
+                </div>
+                <div class="col-md-3 grid">
+                    <img src="img/calculator.png">
+                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Calculator</a></h3>
+                    <div class="item-overlay top"></div>
                 </div>
             </div>
         </div>

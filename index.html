@@ -13,8 +13,12 @@
     <meta property="og:title" content="lloydtheandroid - Digital entreprenuer and full stack web developer" />
     <meta property="og:description" content="Taking pride in designing and building beautiful, highly functional websites and products." />
     <meta property="og:image" content="img/LloydtheAndroid.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="css/hero_style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <style>
         .social-links img {
             width: 35px;
@@ -54,8 +58,44 @@
             transform: scale(1.1);
             opacity: .5;
         }
-        .header-overlay {
+        .loadBar {
 
+        }
+
+        @keyframes overLay {
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+                font-size: larger;
+            }
+            25% {
+                background-color: blue;
+                left: 300px;
+                top: -200px;
+                transform: rotate(20deg);
+                font-size: small;
+            }
+            50% {
+                background-color: red;
+                left: 200px;
+                top: -300px;
+                transform: rotate(-20deg);
+                font-size: smaller;
+            }
+            75% {
+                background-color: yellow;
+                left: 100px;
+                top: -200px;
+                transform: rotate(0deg);
+            }
+            100% {
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
         }
     </style>
     <style>
@@ -94,10 +134,52 @@
             opacity: .9;
             transition: opacity .5s;
         }
+        #return-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.7);
+            width: 50px;
+            height: 50px;
+            display: block;
+            text-decoration: none;
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            border-radius: 35px;
+            display: none;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        #return-to-top i {
+            color: #fff;
+            margin: 0;
+            position: relative;
+            left: 16px;
+            top: 13px;
+            font-size: 19px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        #return-to-top:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        #return-to-top:hover i {
+            color: #fff;
+            top: 5px;
+        }
+        /* Extra Things */
+        body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
     </style>
 </head>
 <body id="index">
-    <!--<div class="hero">-->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
         <div id="heroBackground">
             <div class="overlays-wrapper">
                 <div class="overlay twitter"><span class="">Twitter</span>
@@ -204,7 +286,7 @@
     <main id="theGrid">
         <div class="container">
 
-            <h3>Published Projects</h3>
+            <h3 class="text-center">Published Projects</h3>
             <div class="row">
                 <div class="col-md-3 grid col-sm-6">
                     <img class="img-responsive" src="http://placehold.it/250x250/fe1234">
@@ -236,12 +318,23 @@
             <div class="about col-xs-12 col-sm-6  col-md-6 col-lg-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>About Me</h1>
-                        <p>I am a full stack web developer</p>
-                        <p>My process is flexible, collaborative, and adapts to each client’s needs. I look forward to working
-                        with you on your next project.</p>
+                        <div class="col-md-12">
+                            <h1>About Me</h1>
+                            <div class="col-md-offset-1 col-md-3 col-xs-4 col-sm-4">
+                                <img src="img/LloydGarrison1.jpg" class="img-responsive img-circle">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <p>I am a full stack web developer</p>
+                            <p>My process is flexible, collaborative, and adapts to each client’s needs. I look forward to working
+                            with you on your next project.</p>
+                            <p>To get a glimpse of my past projects, take a look at my <a href="https://resume.github.io/?lloydtheandroid">Github resume</a>.</p>
+                        </div>
                     </div>
                     <div class="social-links col-md-12 hidden-sm hidden-xs">
+                        <a class="github" href="https://github.com/lloydtheandroid" target="_blank">
+                            <img src="img/githubFooter.png" alt="" title="" />
+                        </a>
                         <a class="twitter" href="https://twitter.com/lloydtheandroid" target="_blank">
                             <img src="img/TwitterFooter.png" alt="" title="" />
                         </a>
@@ -253,9 +346,6 @@
                         </a>
                         <a class="instagram" href="https://instagram.com/lloydtheandroid" target="_blank">
                             <img src="img/InstagramFooter.png" alt="" title="" />
-                        </a>
-                        <a class="github" href="https://github.com/lloydtheandroid" target="_blank">
-                            <img src="img/githubFooter.png" alt="" title="" />
                         </a>
                     </div>
                 </div>
@@ -307,6 +397,9 @@
             </div>
             <div class="bottom-left col-xs-4 col-sm-3 hidden-xs hidden-sm">&copy; lloydtheandroid 2016</div>
             <div class="social-links-bottom col-md-12 hidden-md hidden-lg">
+                <a class="github" href="https://github.com/lloydtheandroid" target="_blank">
+                    <img src="img/githubFooter.png" alt="" title="" />
+                </a>
                 <a class="twitter" href="https://twitter.com/lloydtheandroid" target="_blank">
                     <img src="img/TwitterFooter.png" alt="" title="" />
                 </a>
@@ -319,38 +412,69 @@
                 <a class="instagram" href="https://instagram.com/lloydtheandroid" target="_blank">
                     <img src="img/InstagramFooter.png" alt="" title="" />
                 </a>
-                <a class="github" href="https://github.com/lloydtheandroid" target="_blank">
-                    <img src="img/githubFooter.png" alt="" title="" />
-                </a>
             </div>
         </div>
     </footer>
 
-<a class="go-top index" href="#page">
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg width="186px" height="269px" viewBox="0 0 186 269" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
-        <title>Shape</title>
-        <desc>Created with Sketch.</desc>
-        <defs>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="right11" transform="translate(0.000000, -1.000000)" fill="#000000">
-                <path d="M224.171,126.577 L144.171,46.577 C139.29,41.696 131.374,41.696 126.493,46.577 C121.611,51.459
-                121.611,59.373 126.493,64.255 L185.154,122.916 L-28.5,122.916 C-35.403,122.916 -41,128.513 -41,135.416
-                C-41,142.318 -35.403,147.916 -28.5,147.916 L185.154,147.916 L126.495,206.577 C121.613,211.459
-                121.613,219.373 126.495,224.255 C128.935,226.694 132.135,227.916 135.334,227.916 C138.533,227.916
-                141.732,226.694 144.173,224.255 L224.171,144.255 C229.053,139.373 229.053,131.459 224.171,126.577
-                L224.171,126.577 Z" id="Shape" transform="translate(93.416250, 135.416125) rotate(-90.000000)
-                translate(-93.416250, -135.416125) ">
-                </path>
-            </g>
-        </g>
-    </svg>
-</a>
+<!--<a class="go-top index" href="#page">-->
+    <!--<?xml version="1.0" encoding="UTF-8" standalone="no"?>-->
+    <!--<svg width="186px" height="269px" viewBox="0 0 186 269" version="1.1" xmlns="http://www.w3.org/2000/svg">-->
+        <!--&lt;!&ndash; Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch &ndash;&gt;-->
+        <!--<title>Shape</title>-->
+        <!--<desc>Created with Sketch.</desc>-->
+        <!--<defs>-->
+        <!--</defs>-->
+        <!--<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">-->
+            <!--<g id="right11" transform="translate(0.000000, -1.000000)" fill="#000000">-->
+                <!--<path d="M224.171,126.577 L144.171,46.577 C139.29,41.696 131.374,41.696 126.493,46.577 C121.611,51.459-->
+                <!--121.611,59.373 126.493,64.255 L185.154,122.916 L-28.5,122.916 C-35.403,122.916 -41,128.513 -41,135.416-->
+                <!--C-41,142.318 -35.403,147.916 -28.5,147.916 L185.154,147.916 L126.495,206.577 C121.613,211.459-->
+                <!--121.613,219.373 126.495,224.255 C128.935,226.694 132.135,227.916 135.334,227.916 C138.533,227.916-->
+                <!--141.732,226.694 144.173,224.255 L224.171,144.255 C229.053,139.373 229.053,131.459 224.171,126.577-->
+                <!--L224.171,126.577 Z" id="Shape" transform="translate(93.416250, 135.416125) rotate(-90.000000)-->
+                <!--translate(-93.416250, -135.416125) ">-->
+                <!--</path>-->
+            <!--</g>-->
+        <!--</g>-->
+    <!--</svg>-->
+<!--</a>-->
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+</script>
 </body>
 </html>

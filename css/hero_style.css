@@ -2815,18 +2815,18 @@ Copyright (c) 2014 Daniel Eden
     -webkit-pointer-events:none;
     pointer-events:none
 }
-#transition-color{
-    width:4000px;
-    height:4000px;
-    margin:0 auto -2px auto;
-    border-radius:50%;
-    -webkit-transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);
-    transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);
-    -webkit-perspective:1000px;
-    perspective:1000px;
-    -webkit-transition:all 0 ease-in-out 0;
-    transition:all 0 ease-in-out 0
-}
+/*#transition-color{*/
+    /*width:4000px;*/
+    /*height:4000px;*/
+    /*margin:0 auto -2px auto;*/
+    /*border-radius:50%;*/
+    /*-webkit-transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);*/
+    /*transform:translate3d(0, 0, 0) scale3d(0.001, 0.001, 1);*/
+    /*-webkit-perspective:1000px;*/
+    /*perspective:1000px;*/
+    /*-webkit-transition:all 0 ease-in-out 0;*/
+    /*transition:all 0 ease-in-out 0*/
+/*}*/
 body.transitioning #transition-color{
     -webkit-transition:all 700ms ease-in-out 250ms;
     transition:all 700ms ease-in-out 250ms;

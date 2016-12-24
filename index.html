@@ -20,13 +20,19 @@
     <link rel="stylesheet" href="css/hero_style.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <style>
-        .social-links img {
-            width: 35px;
-            height: auto;
+        /* Extra Things */
+        body {
+            background: #eee ;
+            font-family: 'Open Sans', sans-serif;
         }
-        .social-links-bottom img {
-            width: 25px;
-            height: auto;
+        h3 {
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h3 i{
+            color: #444;
         }
 
         * {
@@ -37,79 +43,10 @@
             padding: 0;
         }
 
-        .grid {
-            position: relative;
-
-            /*border: 1px solid #333;*/
-            margin: 2%;
-            overflow: hidden;
-            width: 250px;
-        }
-        .grid img {
-            max-width: 100%;
-            -moz-transition: all 0.3s;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
-            opacity: 1;
-        }
-        .grid:hover img {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: .5;
-        }
-        .loadBar {
-
-        }
-
-        @keyframes overLay {
-            0% {
-                background-color: blue;
-                left: 0px;
-                top: 0px;
-                transform: rotate(0deg);
-                font-size: larger;
-            }
-            25% {
-                background-color: blue;
-                left: 300px;
-                top: -200px;
-                transform: rotate(20deg);
-                font-size: small;
-            }
-            50% {
-                background-color: red;
-                left: 200px;
-                top: -300px;
-                transform: rotate(-20deg);
-                font-size: smaller;
-            }
-            75% {
-                background-color: yellow;
-                left: 100px;
-                top: -200px;
-                transform: rotate(0deg);
-            }
-            100% {
-                background-color: yellow;
-                left: 0px;
-                top: 0px;
-                transform: rotate(360deg);
-            }
-        }
-
-        #outer-box {
-            width: 300px;
-            height: 194px;
-            display: block;
-            position: relative;
-        }
-        /* line 9, ../sass/style.scss */
         #outer-box img {
             width: 300px;
             height: auto;
         }
-        /* line 14, ../sass/style.scss */
         #outer-box #inner-box {
             background: #FD8698;
             height: 100%;
@@ -121,14 +58,12 @@
             padding: 0;
             transition: opacity .5s;
         }
-        /* line 25, ../sass/style.scss */
         #outer-box #inner-box p {
             color: #fff;
             line-height: 150px;
             font-family: 'arial';
             text-align: center;
         }
-        /* line 34, ../sass/style.scss */
         #outer-box:hover #inner-box {
             opacity: .9;
             transition: opacity .5s;
@@ -173,8 +108,96 @@
             color: #fff;
             top: 5px;
         }
-        /* Extra Things */
-        body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+        .social-links img {
+            width: 35px;
+            height: auto;
+        }
+        .social-links-bottom img {
+            width: 25px;
+            height: auto;
+        }
+
+        .grid:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: .5;
+        }
+
+
+
+        span.text-content {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            cursor: pointer;
+            display: table;
+            height: 50%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            -webkit-transition: opacity 500ms;
+            -moz-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            transition: opacity 500ms;
+        }
+        span.text-content span {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .grid a:hover span.text-content {
+            opacity: 1;
+        }
+        .imgSwap img:last-child {
+            display:none
+        }
+        .imgSwap:hover img:first-child {
+            display:none
+        }
+        .imgSwap:hover img:last-child {
+            display:inline-block
+        }
+
+        @keyframes overLay {
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+                font-size: larger;
+            }
+            25% {
+                background-color: blue;
+                left: 300px;
+                top: -200px;
+                transform: rotate(20deg);
+                font-size: small;
+            }
+            50% {
+                background-color: red;
+                left: 200px;
+                top: -300px;
+                transform: rotate(-20deg);
+                font-size: smaller;
+            }
+            75% {
+                background-color: yellow;
+                left: 100px;
+                top: -200px;
+                transform: rotate(0deg);
+            }
+            100% {
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+        }
+
     </style>
 </head>
 <body id="index">
@@ -283,28 +306,53 @@
 
     <!--Start of Grid-->
     <main id="theGrid">
-        <div class="container">
-
+        <!--Mobile view-->
+        <div class="container-fluid hidden-md hidden-lg">
+            <h2 class="text-center">Published Projects</h2>
+            <div id="mobileCapstone" class="col-xs-12">
+                <a href="#"><h3>Capstone Project</h3></a>
+            </div>
+            <div id="mobileSimon" class="col-xs-12">
+                <a href="#"><h3>Simple Simon</h3></a>
+            </div>
+            <div id="mobileMap" class="col-xs-12">
+                <a href="#"><h3>Weather Map</h3></a>
+            </div>
+            <div id="mobileCalculator" class="col-xs-12">
+                <a href="#"><h3>JavaScript Calculator</h3></a>
+            </div>
+        </div>
+        <!--For desktop Viewing-->
+        <div class="container hidden-sm hidden-xs">
             <h3 class="text-center">Published Projects</h3>
             <div class="container">
-                <div class="grid col-md-6 col-xs-12">
-                    <img class="img-responsive" src="http://placehold.it/250x250/fe1234">
-                    <h3><a href="#">Capstone Project (TBD)</a></h3>
+                <div class="grid col-md-6 col-lg-3">
+                    <a class="imgSwap" href="#">
+                        <img class="img-responsive img-rounded" src="http://placehold.it/250x250/fe1234">
+                        <h4><span class="text-content"><span>Capstone Project</span></span></h4>
+                    </a>
                     <div class="item-overlay top"></div>
                 </div>
-                <div class="grid col-md-6 col-xs-12">
-                    <img class="img-responsive" src="img/SimpleSimon.png">
-                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Simple Simon </a></h3>
+                <div class="grid col-md-6 col-lg-3">
+                    <a class="imgSwap" href="https://github.com/lloydtheandroid/Simple_Simon">
+                        <img class="img-responsive img-rounded" src="img/SimpleSimon.png">
+                        <img src="img/SimpleSimon.gif">
+                        <h4><span class="text-content"><span>Simple Simon</span></span></h4>
+                    </a>
                     <div class="item-overlay top"></div>
                 </div>
-                <div class="grid col-md-6 col-xs-12">
-                    <img class="img-responsive" src="img/weather_map.png">
-                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Weather Map </a></h3>
+                <div class="grid col-md-6 col-lg-3">
+                    <a class="imgSwap" href="https://github.com/lloydtheandroid/Simple_Simon">
+                        <img class="img-responsive img-rounded" src="img/weather_map.png">
+                        <h4><span class="text-content"><span>Weather Map</span></span></h4>
+                    </a>
                     <div class="item-overlay top"></div>
                 </div>
-                <div class="grid col-md-6 col-xs-12">
-                    <img class="img-responsive" src="img/calculator.png">
-                    <h3><a href="https://github.com/lloydtheandroid/Simple_Simon">Calculator</a></h3>
+                <div class="grid col-md-6 col-lg-3">
+                    <a class="imgSwap" href="https://github.com/lloydtheandroid/">
+                        <img class="img-responsive img-rounded" src="img/calculator.png">
+                        <h4><span class="text-content"><span>JavaScript Calculator</span></span></h4>
+                    </a>
                     <div class="item-overlay top"></div>
                 </div>
             </div>
@@ -433,8 +481,6 @@
             }
         });
     });
-</script>
-<script>
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
             $('#return-to-top').fadeIn(200);    // Fade in the arrow

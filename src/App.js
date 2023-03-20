@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>Welcome to My Resume</h1>
+      <h1>lloydtheandroid Welcomes You!</h1>
       <Resume />
     </div>
   );

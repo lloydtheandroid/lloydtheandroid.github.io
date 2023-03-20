@@ -1,0 +1,32 @@
+.experience {
+    margin-bottom: 40px;
+  }
+  
+  .job {
+    color: #5b5b5b;
+    margin-bottom: 20px;
+  }
+  
+  .job h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .job p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+  }
+  
+  .job-dates {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  .job-desc {
+    margin-bottom: 5px;
+  }
+  

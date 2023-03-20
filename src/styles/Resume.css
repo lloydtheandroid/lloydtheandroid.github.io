@@ -1,0 +1,156 @@
+/* Body styles */
+body {
+    background-color: #f6f7f9;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .green-heading {
+    color: #008000; /* set the color to green */
+  }
+  
+  /* Main container styles */
+  .resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section header styles */
+  .section-header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    /* add the green-heading class to make the headings green */
+    /* remove this line if you want to apply the green color to all headings */
+    color: #008000;
+  }
+  
+  .section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 5px;
+  }
+  
+  .section-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 5px;
+  }
+  
+  /* Contact section styles */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    color: #5b5b5b;
+  }
+  
+  .contact-item svg {
+    margin-right: 10px;
+    color: #8c8c8c;
+  }
+  
+  .contact-item a {
+    color: #5b5b5b;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .contact-item a:hover {
+    color: #1c1c1c;
+  }
+  
+  /* About section styles */
+  .about {
+    margin-bottom: 40px;
+  }
+  
+  .about p {
+    color: #5b5b5b;
+    line-height: 1.5;
+  }
+  
+  /* Skills section styles */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .skill {
+    background-color: #f0f2f5;
+    color: #5b5b5b;
+    padding: 8px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  
+  /* Education section styles */
+  .education {
+    margin-bottom: 40px;
+  }
+  
+  .school {
+    color: #5b5b5b;
+    margin-bottom: 10px;
+  }
+  
+  .school h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .school p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+  }
+  
+  /* Experience section styles */
+  .experience {
+    margin-bottom: 40px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .job p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+  }
+  
+  .job-responsibilities {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .job-responsibility {
+    font-size: 14px;
+    color: #5b5b5b;
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  

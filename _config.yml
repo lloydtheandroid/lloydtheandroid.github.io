@@ -1,0 +1,162 @@
+# Site
+repository: lloydtheandroid/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Lloyd Garrison
+title: Full Stack Web Developer and Senior IT Systems Engineer
+email: lloyd.h.garrison@gmail.com
+website: https://github.com/lloydtheandroid
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+twitter_username: lloydtheandroid
+github_username:  lloydtheandroid
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: lloydtheandroid
+linkedin_username: lloydhgarrison
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: jekyll
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+#additional_links:
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name is Lloyd and I am Senior IT Systems Engineer with over 20 years experience in Systems Security and Network Operations. I have a background in software and web development using Python, Java, and various JavaScript frameworks. I have had several roles where I served as Project Manager and extensive experience in IT Service Management and developing solutions for businesses
+
+  I am most skilled in: <mark>Networking</mark> <mark>CyberSecurity</mark> <mark>Web development</mark> and <mark>DevOps</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Super awesome project
+        link: github.com/lloydtheandroid
+        # link_text: Project Website
+        additional_links:
+          - title:  lloydtheandroid/
+            icon: fab fa-github
+            url: github.com/lloydtheandroid/modern-resume-theme
+          # - title:  Github page for project (eg. lloydtheandroid/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. lloydtheandroid.github.io/modern-resume-theme)
+        quote: >
+          "Sometimes the greatest things in life come from the most unexpected places"
+        description: | # this will include new lines to allow paragraphs
+          Embarking on this journey, my initial objective was to delve into the depths of <mark>React</mark>. As time passed, this humble endeavor blossomed into a comprehensive app. I've gained a wealth of knowledge and skills through this process, and it fills me with immense pride to include this in my portfolio. My humble advice to those without a project of such magnitude: venture forth and create your own remarkable work..
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Medical Information Systems Capability Developer
+        link: https://www.army.mil/futures
+        link_text: US Army Futures Command
+        sub_title: San Antonio, TX
+        caption: July 2020 - Present
+        quote: >
+          Be all that you can be!
+        description: | # this will include new lines to allow paragraphs
+            Plan, design and implement security solutions for the organization's network and systems Perform risk assessments and identify vulnerabilities to develop and implement remediation strategies Conduct penetration testing to identify potential weaknesses in the systems Develop and implement security policies and procedures Provide guidance and mentorship to junior security engineers and analysts Collaborate with cross-functional teams to ensure compliance with industry standards and regulations Conduct security training for employees to promote security awareness and best practices Monitor security events and alerts to respond to security incidents in a timely and effective manner.
+      - layout: left
+        title: Senior Cyber Security Engineer
+        link: https://www.gdit.com/
+        link_text: GDIT
+        sub_title: San Antonio, TX
+        caption: October 2019 - July 2020
+        quote: >
+          Be all that you can be!
+        description: | # this will include new lines to allow paragraphs
+            Plan, design and implement security solutions for the organization's network and systems Perform risk assessments and identify vulnerabilities to develop and implement remediation strategies Conduct penetration testing to identify potential weaknesses in the systems Develop and implement security policies and procedures Provide guidance and mentorship to junior security engineers and analysts Collaborate with cross-functional teams to ensure compliance with industry standards and regulations Conduct security training for employees to promote security awareness and best practices Monitor security events and alerts to respond to security incidents in a timely and effective manner.
+      - layout: left
+        title: Project Manager and Lead Developer
+        link: https://def-logix.com/
+        link_text: Def-Logix
+        sub_title: San Antonio, TX
+        caption: April 2017 - October 2019
+        quote: >
+          Be all that you can be!
+        description: | # this will include new lines to allow paragraphs
+            Project Manager and Technical Lead for a 8-person software development team. Developed solutions in python, react js, and Java. Implemented automated testing and CI/CD pipelines into Gitlab, utilizing Ansible, Vagrant, Docker containers and various other automation frameworks. Designed, deployed, and managed a small business network and domain; which includes VMWare, Windows, Active Directory, and Linux operating systems Performed QA Testing and integration for several projects using various technologies Automated tests, builds, configurations, and deployments using python, powershell, and/or Linux shell scripts.
+      - layout: left
+        title: Senior Network Engineer
+        link: https://milestone.tech/
+        location: Milestone Technologies
+        sub_title: Austin, TX
+        caption: June 2015 - August 2016
+        quote: >
+            Austin, TX
+        description: | # this will include new lines to allow paragraphs
+            Network Engineer for several projects including a large Enterprise Network, 2 national nonprofits, and small businesses. Resolved incidents, service and maintenance requests, and projects relevant to supporting client enterprise network infrastructure. Automated network configurations and deployments using Python and bash. Provided remote support and actively monitored networks for 50+ global office locations and 8 data centers. Performed root cause analysis, routine implementations, and network configurations Deployed and managed the Cisco Meraki network for large, national nonprofit organization
+      - layout: left
+        title: Network Engineer
+        link: https://www.wwt.com/
+        link_text: World Wide Technology
+        sub_title: Fort Bragg, NC
+        caption: June 2013 - August 2015
+        quote: >
+          Fort Bragg, NC
+        description: | # this will include new lines to allow paragraphs
+            Enterprise Network Project Engineer for U.S. Army Special Operations Command. Provided Tier 3 Network Operations support and troubleshooting, responded to outages and trouble tickets Designed, deployed, and supported an MPLS transport network encompassing over 60 locations in support of over 5,000 users. Led the network team for new project installation serving over 1,000 users, and personally recognized by client for outstanding support. Operated and managed Cisco IOS, Cisco ISE, Cisco Call Manager, TACACS, Firewalls, and encryption Devices.
+
+  #- title: Education # Title for the section
+  #  layout: list # Type of content section (list/text)
+  #  content:
+  #    - layout: left
+  #      title: Harvard University
+  #      caption: 2010 - 2013
+  #      sub_title: BSc Computer Science
+  #      quote: >
+  #        Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+  #      description: | # this will include new lines to allow paragraphs
+  #        During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+  #        I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Brazillian Jui Jitsu
+      - Wood working
+      - Art (Drawing, Painting, Modeling)
+
+#      Look at this cool image  
+#      ![Trees](/ "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/modern-resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

@@ -1,6 +1,6 @@
 # Site
 repository: lloydtheandroid/lloydtheandroid.github.io
-favicon: images/favicon.ico
+#favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
@@ -46,7 +46,7 @@ about_profile_image: images/profile.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name is Lloyd and I am Senior IT Systems Engineer with over 20 years experience in Systems Security and Network Operations. I have a background in software and web development using Python, Java, and various JavaScript frameworks. I have had several roles where I served as Project Manager and extensive experience in IT Service Management and developing solutions for businesses
 
-  I am most skilled in: <mark>Networking</mark> <mark>CyberSecurity</mark> <mark>Web development</mark> and <mark>DevOps</mark>
+  I am most skilled in: <mark>Networking</mark> <mark>CyberSecurity</mark> <mark>HIPPA</mark> <mark>Web development</mark> and <mark>DevOps</mark>
 
 content:
   - title: Projects # Title for the section
@@ -80,7 +80,8 @@ content:
         quote: >
           Be all that you can be!
         description: | # this will include new lines to allow paragraphs
-            Plan, design and implement security solutions for the organization's network and systems Perform risk assessments and identify vulnerabilities to develop and implement remediation strategies Conduct penetration testing to identify potential weaknesses in the systems Develop and implement security policies and procedures Provide guidance and mentorship to junior security engineers and analysts Collaborate with cross-functional teams to ensure compliance with industry standards and regulations Conduct security training for employees to promote security awareness and best practices Monitor security events and alerts to respond to security incidents in a timely and effective manner.
+            Army Medical Information System capability developer responsible for designing, developing, and maintaining medical information systems used by the Army. Provides technical expertise in areas such as software development, database management, network administration, and cybersecurity.
+            Specific duties includes:   Designing and developing software applications and systems that meet the medical information needs of the Army. Ensuring that all systems are secure and compliant with applicable regulations and standards, such as HIPAA. Collaborating with other technical staff, such as database administrators and network engineers, to integrate medical information systems into the Army's overall IT infrastructure. Conducting testing and quality assurance to ensure that systems are functioning correctly and meeting user requirements. Providing technical support to end-users and troubleshooting any issues that arise. Staying up-to-date with emerging technologies and trends in the medical information field to ensure that Army systems are state-of-the-art and competitive with other healthcare systems. Communicating effectively with other members of the Army healthcare team to understand their needs and provide the best possible solutions. Ensures the success of the Army healthcare system to provide medical professionals  access to the information and tools they need to provide high-quality care to soldiers
       - layout: left
         title: Senior Cyber Security Engineer
         link: https://www.gdit.com/

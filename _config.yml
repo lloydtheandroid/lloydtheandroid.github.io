@@ -89,7 +89,7 @@ content:
         sub_title: San Antonio, TX
         caption: October 2019 - July 2020
         quote: >
-          Be all that you can be!
+          Evolve your world.
         description: | # this will include new lines to allow paragraphs
             Plan, design and implement security solutions for the organization's network and systems Perform risk assessments and identify vulnerabilities to develop and implement remediation strategies Conduct penetration testing to identify potential weaknesses in the systems Develop and implement security policies and procedures Provide guidance and mentorship to junior security engineers and analysts Collaborate with cross-functional teams to ensure compliance with industry standards and regulations Conduct security training for employees to promote security awareness and best practices Monitor security events and alerts to respond to security incidents in a timely and effective manner.
       - layout: left
@@ -99,17 +99,17 @@ content:
         sub_title: San Antonio, TX
         caption: April 2017 - October 2019
         quote: >
-          Be all that you can be!
+          Your business matters. Protect it.
         description: | # this will include new lines to allow paragraphs
             Project Manager and Technical Lead for a 8-person software development team. Developed solutions in python, react js, and Java. Implemented automated testing and CI/CD pipelines into Gitlab, utilizing Ansible, Vagrant, Docker containers and various other automation frameworks. Designed, deployed, and managed a small business network and domain; which includes VMWare, Windows, Active Directory, and Linux operating systems Performed QA Testing and integration for several projects using various technologies Automated tests, builds, configurations, and deployments using python, powershell, and/or Linux shell scripts.
       - layout: left
         title: Senior Network Engineer
         link: https://milestone.tech/
-        location: Milestone Technologies
+        link_text: Milestone Technologies
         sub_title: Austin, TX
         caption: June 2015 - August 2016
         quote: >
-            Austin, TX
+            Managed IT Services Tech Company 
         description: | # this will include new lines to allow paragraphs
             Network Engineer for several projects including a large Enterprise Network, 2 national nonprofits, and small businesses. Resolved incidents, service and maintenance requests, and projects relevant to supporting client enterprise network infrastructure. Automated network configurations and deployments using Python and bash. Provided remote support and actively monitored networks for 50+ global office locations and 8 data centers. Performed root cause analysis, routine implementations, and network configurations Deployed and managed the Cisco Meraki network for large, national nonprofit organization
       - layout: left
